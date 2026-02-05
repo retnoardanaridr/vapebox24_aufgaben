@@ -3,7 +3,6 @@ import image_product2 from "../assets/Screenshot_6.png";
 
 import variant_21 from "../assets/elfbar-t600-blueberry-20mg.webp";
 import variant_22 from "../assets/elfbar-t600-mango-20mg.webp";
-import variant_23 from "../assets/elfbar-t600-peach-ice-20mg.webp";
 
 export const products = [
     {

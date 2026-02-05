@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import Breadcrumb from "../components/breadcrumb";
 
-import product1 from "../assets/elfbar-t600-blueberry-20mg.webp";
 import { products } from "../data/products";
 import { useParams } from "react-router-dom";
 
 export default function ProductDetail() {
-    const [selected, setSelected] = useState({
-        flavor: null,
-    })
     const [selectedFlavor, setSelectFlavor] = useState(null)
     const [qty, setQty] = useState(1)
     const increase = () => setQty(q => q + 1)
