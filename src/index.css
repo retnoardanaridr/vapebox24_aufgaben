@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +20,42 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.div-ads-moving {
+    overflow-x: hidden;
+    width: 100%;
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    gap: var(--gap);
+}
+.marquee_content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: slide-in-out 30s linear infinite;
+    color: #fff;
+    font-size: small;
+    list-style: none;
+}
+@media (max-width:575.98px) {
+    .marquee_content {
+        animation: slide-in-out 20s linear infinite;
+        justify-content: space-around;
+    }
+    .marquee_content .item {
+        gap: 3rem;
+    }
+}
+@keyframes slide-in-out {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
