@@ -6,6 +6,11 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 function Header() {
     const [open, setOpen] = useState(false);
+    const [openAccordion, setOpenAccordion] = useState({
+        shop: false,
+        vapes: false,
+        pod: false,
+    })
 
     return (
         <>
@@ -57,16 +62,73 @@ function Header() {
                             </div>
                             <ul className="flex flex-col font-medium p-4 space-y-2 border-t border-default">
                                 <li>
-                                    <Link to="#" className="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</Link>
+                                    <Link to="#" className="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Aktionen</Link>
+                                </li>
+                                <li className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">
+                                    <button onClick={() => setOpenAccordion(prev => ({
+                                        ...prev,
+                                        shop: !prev.shop,
+                                    }))} className="flex justify-between w-full text-left font-semibold">
+                                        Shop All <span>{openAccordion.shop ? "-" : "+"}</span>
+                                    </button>
+                                    {openAccordion.shop && (
+                                        <ul className="pl-4 mt-2 space-y-2 text-sm">
+                                            <button onClick={() => setOpenAccordion(prev => ({
+                                                ...prev,
+                                                vapes: !prev.vapes,
+                                            }))} className="font-bold flex justify-between w-full text-left">
+                                                Vapes <span>{openAccordion.vapes ? "-" : "+"}</span>
+                                            </button>
+                                            {openAccordion.vapes && (
+                                                <div>
+                                                    <li className="py-1">Filter Drip Tip-Systeme</li>
+                                                    <li className="py-1">mit Nikotin</li>
+                                                    <li className="py-1">ohne Nikotin</li>
+                                                </div>
+                                            )}
+                                            <button onClick={() => setOpenAccordion(prev => ({
+                                                ...prev,
+                                                pod: !prev.pod,
+                                            }))} className="font-bold flex justify-between w-full text-left">
+                                                POD-Systeme <span>{openAccordion.pod ? "-" : "+"}</span>
+                                            </button>
+                                            {openAccordion.pod && (
+                                                <div>
+                                                    <li className="py-1">Akkuträger</li>
+                                                    <li className="py-1">mit Nikotin</li>
+                                                    <li className="py-1">ohne Nikotin</li>
+                                                    <li className="py-1">Refillable Pods</li>
+                                                </div>
+                                            )}
+                                            <li>
+                                                <Link to="" className="font-bold flex justify-between w-full text-left">Big Puff</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="" className="font-bold flex justify-between w-full text-left">Snacks</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="" className="font-bold flex justify-between w-full text-left">Drinks</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="" className="font-bold flex justify-between w-full text-left">Promotion/Display</Link>
+                                            </li>
+                                        </ul>
+                                    )}
                                 </li>
                                 <li>
-                                    <Link to="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</Link>
+                                    <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Neuheiten</Link>
                                 </li>
                                 <li>
-                                    <Link to="" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</Link>
+                                    <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Marken</Link>
                                 </li>
                                 <li>
-                                    <Link to="" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</Link>
+                                    <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Content</Link>
+                                </li>
+                                <li>
+                                    <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Kontakt</Link>
+                                </li>
+                                <li>
+                                    <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Trendartikel</Link>
                                 </li>
                             </ul>
                         </div>

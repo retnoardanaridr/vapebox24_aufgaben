@@ -1,12 +1,12 @@
 import React from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { partners } from "../data/company_partner";
+import { topmarken } from "../data/top_marken";
 
-export default function SliderCompany() {
+export default function TopMarken() {
     return(
         <>
-            <div className="px-2 py-3 bg-[#DEEDFF]">
+            <div className="px-2 py-3">
                 <Swiper
                 modules={[Autoplay]}
                 loop={true}
@@ -18,7 +18,7 @@ export default function SliderCompany() {
                     1024: { slidesPerView:6 },
                 }}
                 >
-                    {partners.map((item) => (
+                    {topmarken.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="flex items-center justify-center h-24">
                                 <img src={item.image} alt={item.title} className="max-h-32 w-auto object-contain" />

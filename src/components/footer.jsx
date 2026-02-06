@@ -1,21 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import icon from "../assets/icon_vapebox.png";
 
 
 export default function Footer() {
     return (
         <>
-            <footer className="bg-neutral-primary bg-[#DEEDFF]">
+            <footer className="bg-neutral-primary bg-[#DEEDFF] text-[#187DF9]">
                 <div className="mx-auto w-full max-w-screen-xl">
                     <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-2">
                         <div>
-                            <h2 className="font-bold">Unser Motto</h2>
-                            <p className="p-2 font-bold text-xl">
+                            <h2 className="font-bold text-lg">Unser Motto</h2>
+                            <p className="py-2 font-bold text-2xl">
                                 Als kundennaher Großhandelspartner
                                 bieten wir eine riesige Produktauswahl
                                 zu unschlagbaren Preisen.
                                 - Ihr Umsatz High.
                             </p>
+                            <div>
+                                <img src={icon} alt="Vapebox 24" className="py-6 w-1/2" />
+                                <p>Großhandel für E-Zigaretten, internationale Snacks & Drinks. Tankstellen, Kioske und Supermärkte profitieren von unserer breiten Produktpalette.</p>
+                            </div>
                         </div >
                         <div className="grid grid-cols-2 md:grid-cols-3">
                             <div>
@@ -87,7 +92,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="px-4 py-6 bg-neutral-secondary-soft md:flex md:items-center md:justify-between">
-                        <span className="text-sm text-body sm:text-center">© 2024 <a href="https://flowbite.com/">Vapebox24</a>. All Rights Reserved.
+                        <span className="text-sm text-body sm:text-center">© 2024 <a href="https://flowbite.com/">Vapebox24</a>. © Alle Rechte vorbehalten.
                         </span>
                         <div className="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse">
                             <Link to="#" className="text-body hover:text-heading">

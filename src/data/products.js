@@ -18,12 +18,14 @@ export const products = [
                     name: "mango",
                     label: "Mango Ice",
                     img_variant: variant_21,
+                    stock: 12,
                 },
                 {
                     id: 2,
                     name: "grape",
                     label: "Grape",
                     img_variant: variant_22,
+                    stock: 0,
                 }
             ]
         }
@@ -41,12 +43,14 @@ export const products = [
                     name: "mango",
                     label: "Mango Ice",
                     img_variant: variant_21,
+                    stock: 5,
                 },
                 {
                     id: 2,
                     name: "grape",
                     label: "Grape",
                     img_variant: variant_22,
+                    stock: 10,
                 }
             ]
         }
@@ -64,12 +68,14 @@ export const products = [
                     name: "mango",
                     label: "Mango Ice",
                     img_variant: variant_21,
+                    stock: 6,
                 },
                 {
                     id: 2,
                     name: "grape",
                     label: "Grape",
                     img_variant: variant_22,
+                    stock: 8,
                 }
             ]
         }
@@ -87,12 +93,14 @@ export const products = [
                     name: "mango",
                     label: "Mango Ice",
                     img_variant: variant_21,
+                    stock: 16,
                 },
                 {
                     id: 2,
                     name: "grape",
                     label: "Grape",
                     img_variant: variant_22,
+                    stock: 5,
                 }
             ]
         }
@@ -110,12 +118,14 @@ export const products = [
                     name: "mango",
                     label: "Mango Ice",
                     img_variant: variant_21,
+                    stock:0,
                 },
                 {
                     id: 2,
                     name: "grape",
                     label: "Grape",
                     img_variant: variant_22,
+                    stock: 1,
                 }
             ]
         }
@@ -133,12 +143,14 @@ export const products = [
                     name: "mango",
                     label: "Mango Ice",
                     img_variant: variant_21,
+                    stock: 8,
                 },
                 {
                     id: 2,
                     name: "grape",
                     label: "Grape",
                     img_variant: variant_22,
+                    stock: 0,
                 }
             ]
         }

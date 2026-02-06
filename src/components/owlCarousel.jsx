@@ -9,7 +9,7 @@ import { products } from "../data/products";
 export default function OwlCarousel(){
     return(
         <>
-            <div className="px-2 py-3 mb-5">
+            <div className="px-2 py-3 mb-5 bg-[#F7F7F7]">
                 <Swiper 
                 modules={[Autoplay]}
                 loop={true}
