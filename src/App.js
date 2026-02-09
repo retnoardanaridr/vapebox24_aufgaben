@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import ShopProducts from "./pages/shop_product";
 import Footer from "./components/footer";
 import ProductDetail from "./pages/product_detail";
+import ContentPromotion from "./pages/content";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<HomePage/>} />
           <Route path="/shop-products" element={<ShopProducts />} />
           <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/promotion" element={<ContentPromotion />} />
         </Routes>
       <Footer />
     </>

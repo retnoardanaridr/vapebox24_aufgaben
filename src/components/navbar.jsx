@@ -122,7 +122,7 @@ function Header() {
                                     <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Marken</Link>
                                 </li>
                                 <li>
-                                    <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Content</Link>
+                                    <Link to="/promotion" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Content</Link>
                                 </li>
                                 <li>
                                     <Link to="" className="block py-2 px-3 text-heading rounded md:border-0 md:p-0">Kontakt</Link>
@@ -204,8 +204,9 @@ function Header() {
                                 <li>
                                     <Link to="#" className="block py-2 px-3 text-heading rounded md:border-0 md:hover:text-fg-brand md:p-0">Marken</Link>
                                 </li>
-                                <li>
-                                    <Link to="#" className="block py-2 px-3 text-heading rounded md:border-0 md:hover:text-fg-brand md:p-0">Content</Link>
+                                <li className="inline-flex items-center gap-1 relative">
+                                    <span className="absolute -top-3 -right-3 bg-black text-white text-[10px] px-1.5 rounded-sm">HOT!</span>
+                                    <Link to="/promotion" className="block py-2 px-3 text-heading rounded md:border-0 md:hover:text-fg-brand md:p-0">Content</Link>
                                 </li>
                                 <li>
                                     <Link to="#" className="block py-2 px-3 text-heading rounded md:border-0 md:hover:text-fg-brand md:p-0">Kontakt</Link>
