@@ -6,6 +6,7 @@ import ShopProducts from "./pages/shop_product";
 import Footer from "./components/footer";
 import ProductDetail from "./pages/product_detail";
 import ContentPromotion from "./pages/content";
+import FAQ from "./pages/faq";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/shop-products" element={<ShopProducts />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/promotion" element={<ContentPromotion />} />
+          <Route path="/FAQ" element={<FAQ />} />
         </Routes>
       <Footer />
     </>

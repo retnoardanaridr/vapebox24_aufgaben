@@ -87,6 +87,9 @@ export default function Footer() {
                                     <li className="mb-4">
                                         <Link to="#" className="hover:underline">Widerrufsrecht</Link>
                                     </li>
+                                    <li className="mb-4">
+                                        <Link to="/FAQ" className="hover:underline">FAQ</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
