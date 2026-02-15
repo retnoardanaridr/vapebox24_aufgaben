@@ -3,6 +3,7 @@ import Breadcrumb from "../components/breadcrumb";
 
 import { products } from "../data/products";
 import { useParams } from "react-router-dom";
+import VerwandteProduk from "../components/verwandte_product";
 
 export default function ProductDetail() {
     const [selectedFlavor, setSelectFlavor] = useState(null)
@@ -96,6 +97,8 @@ export default function ProductDetail() {
                         </button>
                     </div>
                 </div>
+                <h1 className="text-center text-2xl text-[#187DF9] my-4 font-bold">VERWANDTE PRODUKTE</h1>
+                <VerwandteProduk />
             </section>
         </>
     )

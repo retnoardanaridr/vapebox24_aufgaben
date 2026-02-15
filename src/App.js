@@ -7,11 +7,13 @@ import Footer from "./components/footer";
 import ProductDetail from "./pages/product_detail";
 import ContentPromotion from "./pages/content";
 import FAQ from "./pages/faq";
+import ScrollToTop from "./components/scrolltotop";
 
 function App() {
   return (
     <>
       <Header />
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/shop-products" element={<ShopProducts />} />
