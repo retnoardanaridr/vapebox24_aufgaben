@@ -11,6 +11,8 @@ export const products = [
         image: [
             image_product,
         ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde aperiam commodi! Beatae neque a dolorum voluptatem accusamus. Eveniet sunt harum nobis facilis expedita repudiandae ut in dolor doloribus!",
+        summary: "Lorem Ipsum dolor amet",
         variants: {
             flavor: [
                 {
@@ -36,6 +38,8 @@ export const products = [
         image: [
             image_product2,
         ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde aperiam commodi! Beatae neque a dolorum voluptatem accusamus. Eveniet sunt harum nobis facilis expedita repudiandae ut in dolor doloribus!",
+        summary: "Lorem Ipsum dolor amet",
         variants: {
             flavor: [
                 {
@@ -61,6 +65,8 @@ export const products = [
         image: [
             image_product
         ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde aperiam commodi! Beatae neque a dolorum voluptatem accusamus. Eveniet sunt harum nobis facilis expedita repudiandae ut in dolor doloribus!",
+        summary: "Lorem Ipsum dolor amet",
         variants: {
             flavor: [
                 {
@@ -86,6 +92,8 @@ export const products = [
         image: [
             image_product2,
         ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde aperiam commodi! Beatae neque a dolorum voluptatem accusamus. Eveniet sunt harum nobis facilis expedita repudiandae ut in dolor doloribus!",
+        summary: "Lorem Ipsum dolor amet",
         variants: {
             flavor: [
                 {
@@ -111,6 +119,8 @@ export const products = [
         image: [
             image_product,
         ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde aperiam commodi! Beatae neque a dolorum voluptatem accusamus. Eveniet sunt harum nobis facilis expedita repudiandae ut in dolor doloribus!",
+        summary: "Lorem Ipsum dolor amet",
         variants: {
             flavor: [
                 {
@@ -136,6 +146,8 @@ export const products = [
         image: [
             image_product2,
         ],
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam unde aperiam commodi! Beatae neque a dolorum voluptatem accusamus. Eveniet sunt harum nobis facilis expedita repudiandae ut in dolor doloribus!",
+        summary: "Lorem Ipsum dolor amet",
         variants: {
             flavor: [
                 {
